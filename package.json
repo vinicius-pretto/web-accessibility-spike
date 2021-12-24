@@ -1,0 +1,23 @@
+{
+  "name": "web-accessibility-spike",
+  "version": "1.0.0",
+  "description": "Web Accessibility Spike",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius-pretto/web-accessibility-spike.git"
+  },
+  "author": "Vinicius Pretto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicius-pretto/web-accessibility-spike/issues"
+  },
+  "homepage": "https://github.com/vinicius-pretto/web-accessibility-spike#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
