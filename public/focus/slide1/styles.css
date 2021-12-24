@@ -83,3 +83,16 @@ section a {
 .footer a:focus {
   outline-color: var(--color-white);
 }
+
+.page-slider a {
+  border-color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.page-slider a:hover,
+.page-slider a:focus {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  outline-color: var(--color-white);
+}

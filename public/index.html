@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Accessibility - Focus</title>
-  <link rel="stylesheet" href="global.css">
-</head>
-<body>
-  <div class="align-content-center buttons-container">
-    <button class="btn order-3">Third</button>
-    <button class="btn">First</button>
-    <button class="btn">Second</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Accessibility - Focus</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/utilities.css" />
+  </head>
+  <body>
+    <div class="align-content-center buttons-container">
+      <button class="btn order-3">Third</button>
+      <button class="btn">First</button>
+      <button class="btn">Second</button>
+    </div>
+
+    <div class="page-slider">
+      <a href="/" title="Back to previous slide">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </a>
+      <a href="/focus/slide1/" title="Go to next slide">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
 </html>
