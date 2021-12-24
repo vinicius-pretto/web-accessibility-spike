@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
 :root {
   /* colors */
   --color-white: #ffffff;
-  --color-dark: #3c3c3c;
+  --color-dark: #131313;
   --color-btn-bg-primary: #5d95fb;
   --color-btn-text-primary: #ffffff;
+  --color-gray: #e1e1e1;
+  --color-link: #5b5bff;
 
   /* font families  */
   --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-serif: "Roboto Slab", serif;
 
   /* font sizes */
   --font-size-base: 1rem;
+  --font-size-medium: 1.125rem;
   --font-size-large: 2rem;
 
   /* font weights */
@@ -64,12 +70,31 @@ ol {
   outline-offset: 4px;
 }
 
-/* utilities */
+/* ======== utilities ========= */
 .align-content-center {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+/* ============================ */
+
+.container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
