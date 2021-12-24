@@ -1,3 +1,21 @@
+.skip-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 1rem;
+  top: -9999px;
+  background-color: darkgreen;
+  font-size: var(--font-size-medium);
+  color: var(--color-white);
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+  left: 1.5rem;
+}
+
 .header {
   padding-top: 1rem;
   padding-bottom: 1rem;
