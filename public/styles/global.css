@@ -121,6 +121,7 @@ ol {
 .page-slider a:focus {
   background-color: var(--color-white);
   color: var(--color-dark);
+  outline: none;
 }
 
 /* ========== slide1 ==========  */

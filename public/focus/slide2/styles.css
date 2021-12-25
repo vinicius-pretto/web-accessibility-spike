@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-dark);
+  box-sizing: border-box;
+}
+
+.menu {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  transform: translateX(0);
+  height: 100vh;
+  width: 320px;
+  background-color: #f8f9fa;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+  transition: all 20ms ease-out;
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+.menu[aria-hidden="true"] {
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+.menu a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  color: var(--color-dark);
+  box-sizing: border-box;
+  transition: all 150ms ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius-base);
+  outline: none;
+}
+
+.menu__button {
+  height: 32px;
+  width: 32px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.menu__button:hover,
+.menu__button:focus {
+  outline-color: var(--color-white);
+}
