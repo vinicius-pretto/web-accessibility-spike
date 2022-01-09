@@ -25,6 +25,10 @@
   color: var(--color-yellow);
 }
 
+.text-blue {
+  color: var(--color-blue);
+}
+
 .text-red {
   color: var(--color-red);
 }

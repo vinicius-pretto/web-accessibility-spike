@@ -1,0 +1,13 @@
+.topics-list {
+  text-transform: uppercase;
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-bold);
+}
+
+.topics-list li {
+  margin-bottom: 3rem;
+}
+
+.topics-list li:last-child {
+  margin-bottom: 0;
+}
