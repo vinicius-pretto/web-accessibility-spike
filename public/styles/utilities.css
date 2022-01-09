@@ -16,3 +16,15 @@
 .mb-4 {
   margin-bottom: 1rem;
 }
+
+.text-green {
+  color: var(--color-green);
+}
+
+.text-yellow {
+  color: var(--color-yellow);
+}
+
+.text-red {
+  color: var(--color-red);
+}

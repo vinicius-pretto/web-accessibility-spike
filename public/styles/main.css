@@ -50,6 +50,16 @@ ol {
   margin-right: auto;
 }
 
+.title {
+  font-size: var(--font-size-huge);
+  max-width: 850px;
+}
+
+.slide-dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
 .btn {
   height: 52px;
   min-width: 150px;
