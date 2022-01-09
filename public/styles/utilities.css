@@ -1,3 +1,7 @@
+.flex-column {
+  flex-direction: column;
+}
+
 /* ============== margins ============== */
 .mb-4 {
   margin-bottom: 1rem;
@@ -33,3 +37,7 @@
   color: var(--color-red);
 }
 /* ============== end text ============== */
+
+.hidden {
+  visibility: hidden;
+}

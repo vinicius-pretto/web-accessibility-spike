@@ -51,19 +51,52 @@ ol {
   margin-right: auto;
 }
 
+.code {
+  padding: 1rem;
+  background: #f3f5f7;
+  border-radius: var(--border-radius-base);
+}
+
+/* ================= form ============== */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  appearance: none;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-base);
+  box-sizing: border-box;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  outline-color: initial;
+  outline-width: initial;
+  outline-offset: initial;
+  outline-style: solid;
+}
+/* ================= end form ============== */
+
 /* ================= button ============== */
 .btn {
-  height: 52px;
+  display: inline-block;
   min-width: 150px;
   padding: 1rem 0;
   background-color: var(--color-btn-bg-primary);
   color: var(--color-btn-text-primary);
   font-weight: var(--font-weight-bold);
   font-size: inherit;
-  border: none;
+  border: 1px solid var(--color-btn-bg-primary);
   border-radius: var(--border-radius-base);
   cursor: pointer;
   transition: filter 250ms ease-in-out;
+  text-align: center;
 }
 
 .btn:hover,
