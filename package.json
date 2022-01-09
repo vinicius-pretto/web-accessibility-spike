@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vinicius-pretto/web-accessibility-spike#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.2"
   }
 }

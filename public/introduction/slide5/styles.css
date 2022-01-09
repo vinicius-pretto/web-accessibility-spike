@@ -1,0 +1,20 @@
+.focus-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.focus-section__list {
+  list-style: initial;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+.focus-section__list li {
+  margin-bottom: 1rem;
+}
+
+.focus-section__list li:last-child {
+  margin-bottom: 0;
+}
