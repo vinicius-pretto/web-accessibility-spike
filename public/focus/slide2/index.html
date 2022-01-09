@@ -28,19 +28,32 @@
       </button>
     </header>
 
-    <nav id="menu" class="menu" aria-hidden="true">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About us</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div
+      id="menu"
+      class="menu"
+      role="dialog"
+      aria-label="Menu"
+      aria-labelledby="nav-drawer"
+    >
+      <nav id="nav-drawer" aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about-us">About us</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="container mt-6">
+      <h1 class="mb-4">Focus</h1>
+      <a href="#">Click here</a>
+    </main>
 
     <div class="page-slider">
       <a href="/focus/slide1" title="Back to previous slide">

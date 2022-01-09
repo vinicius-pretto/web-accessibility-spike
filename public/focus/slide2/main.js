@@ -2,24 +2,17 @@ const menuBtn = document.querySelector("#menu-btn");
 const menu = document.querySelector("#menu");
 
 function openMenu() {
-  menu.removeAttribute("aria-hidden");
+  menu.setAttribute("open", "");
 }
 
 function closeMenu() {
-  menu.ariaHidden = true;
+  menu.removeAttribute("open");
 }
 
 menuBtn.addEventListener("click", () => {
-  if (menu.hasAttribute("aria-hidden")) {
-    openMenu();
+  if (menu.hasAttribute("open")) {
+    closeMenu();
   } else {
-    closeMenu();
-  }
-});
-
-menu.addEventListener("keydown", (e) => {
-  if (e.code === "Escape") {
-    closeMenu();
-    menuBtn.focus();
+    openMenu();
   }
 });

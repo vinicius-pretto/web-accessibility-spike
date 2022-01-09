@@ -9,7 +9,7 @@
   position: absolute;
   top: 67px;
   left: 0;
-  transform: translateX(0);
+  transform: translateX(-100%);
   height: 100vh;
   width: 320px;
   background-color: #f8f9fa;
@@ -19,9 +19,8 @@
   box-shadow: 2px 2px 3px #ccc;
 }
 
-.menu[aria-hidden="true"] {
-  visibility: hidden;
-  transform: translateX(-100%);
+.menu[open] {
+  transform: translateX(0);
 }
 
 .menu a {
