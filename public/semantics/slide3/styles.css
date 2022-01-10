@@ -1,16 +1,7 @@
-.personal-info__form {
-  width: 480px;
+.semantics-slide-3 {
+  gap: 2rem;
 }
 
-.personal-info__title {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.personal-info__button {
-  display: block;
-  width: 150px;
-  margin-left: auto;
+.semantics-slide-3__text {
+  margin-top: 1rem;
 }

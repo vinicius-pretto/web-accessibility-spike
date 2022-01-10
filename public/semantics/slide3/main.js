@@ -1,10 +1,15 @@
-document.querySelector("#btn-submit").addEventListener("click", () => {
-  const user = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-  };
+let btnCount = 0;
+let linkCount = 0;
 
-  const output = document.querySelector("#output");
-  output.classList.remove("hidden");
-  output.innerHTML = JSON.stringify(user, null, 2);
+const btnText = document.querySelector("#btn-text");
+const linkText = document.querySelector("#link-text");
+
+document.querySelector("#click-me-btn").addEventListener("click", () => {
+  btnCount++;
+  btnText.innerHTML = `Clicked: ${btnCount}`;
+});
+
+document.querySelector("#click-me-link").addEventListener("click", () => {
+  linkCount++;
+  linkText.innerHTML = `Clicked: ${btnCount}`;
 });
