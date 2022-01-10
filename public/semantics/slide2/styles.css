@@ -1,16 +1,9 @@
-.personal-info__form {
-  width: 480px;
+.intro-to-web-accessibility {
+  gap: 4rem;
 }
 
-.personal-info__title {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.personal-info__button {
-  display: block;
-  width: 150px;
-  margin-left: auto;
+.intro-to-web-accessibility__link {
+  text-decoration: underline;
+  color: var(--color-blue);
+  cursor: pointer;
 }
