@@ -1,16 +1,24 @@
-.personal-info__form {
-  width: 480px;
-}
-
-.personal-info__title {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.personal-info__button {
+.select__label {
   display: block;
-  width: 150px;
-  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.select {
+  height: 52px;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: var(--border-radius-base);
+  border-color: var(--color-gray-200);
+}
+
+.select:focus {
+  outline-color: initial;
+  outline-width: initial;
+  outline-offset: initial;
+  outline-style: solid;
+}
+
+.select__container {
+  width: 480px;
 }
