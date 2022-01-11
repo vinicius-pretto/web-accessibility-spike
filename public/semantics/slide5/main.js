@@ -1,10 +1,28 @@
-document.querySelector("#btn-submit").addEventListener("click", () => {
-  const user = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-  };
+const darkModeSwitch = document.querySelector("#dark-mode-switch");
+const body = document.querySelector("body");
+const KeyCode = {
+  SPACE: "Space",
+  ENTER: "Enter",
+};
 
-  const output = document.querySelector("#output");
-  output.classList.remove("hidden");
-  output.innerHTML = JSON.stringify(user, null, 2);
+function toggleSwitch() {
+  const switchControl = document.querySelector(
+    "#dark-mode-switch .switch__control"
+  );
+  const ariaChecked = switchControl.getAttribute("aria-checked");
+  const isChecked = ariaChecked === "true" ? false : true;
+  switchControl.setAttribute("aria-checked", isChecked);
+
+  if (isChecked) {
+    body.classList.add("dark-mode");
+  } else {
+    body.classList.remove("dark-mode");
+  }
+}
+
+darkModeSwitch.addEventListener("keypress", (e) => {
+  if (e.code === KeyCode.SPACE || e.code === KeyCode.ENTER) {
+    toggleSwitch();
+  }
 });
+darkModeSwitch.addEventListener("click", toggleSwitch);
