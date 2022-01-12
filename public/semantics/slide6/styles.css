@@ -1,5 +1,12 @@
+.personal-info {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
 .personal-info__form {
-  width: 480px;
+  width: 100%;
 }
 
 .personal-info__title {
@@ -9,8 +16,32 @@
   text-align: center;
 }
 
+.personal-info__section-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
 .personal-info__button {
   display: block;
   width: 150px;
   margin-left: auto;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.w-30 {
+  flex-basis: 30%;
+}
+
+.w-50 {
+  flex-basis: 50%;
+}
+
+.w-70 {
+  flex-basis: 70%;
 }

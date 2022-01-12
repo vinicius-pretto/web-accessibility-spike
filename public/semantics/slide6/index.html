@@ -4,26 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Role</title>
+    <title>Web Accessibility - form</title>
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" async></script>
   </head>
   <body>
-    <div class="slide flex-column">
+    <div class="personal-info">
       <div id="personal-info-form" class="personal-info__form">
-        <div class="personal-info__title">Personal Info</div>
+        <div class="personal-info__title">Sign Up</div>
 
-        <div class="mb-6">
-          <div class="form-label">Name*</div>
-          <input id="name" class="form-control" type="text" name="name" />
-          <p id="error-name" class="error"></p>
+        <div>
+          <div class="personal-info__section-title">Profile</div>
+
+          <div class="form-group mb-6">
+            <div class="w-50">
+              <div class="form-label">First name*</div>
+              <input id="firstName" class="form-control" type="text" name="firstName" />
+              <p class="error"></p>
+            </div>
+            <div class="w-50">
+              <div class="form-label">Last name*</div>
+              <input id="lastName" class="form-control" type="text" name="lastName" />
+              <p class="error"></p>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="form-label">Email*</div>
+            <input id="email" class="form-control" type="text" name="email" />
+            <p class="error"></p>
+          </div>
+          <div>
+            <div class="form-label">Password*</div>
+            <input id="password" class="form-control" type="text" name="password" />
+            <p class="error"></p>
+          </div>
         </div>
 
-        <div class="mb-6">
-          <div class="form-label">Email*</div>
-          <input id="email" class="form-control" type="text" name="email" />
-          <p id="error-email" class="error"></p>
+        <div>
+          <div class="personal-info__section-title">Address</div>
+
+          <div class="mb-6">
+            <div class="form-label">Street*</div>
+            <input id="street" class="form-control" type="text" name="street" />
+            <p class="error"></p>
+          </div>
+
+          <div class="form-group mb-6">
+            <div class="w-30">
+              <div class="form-label">ZIP code*</div>
+              <input id="zipCode" class="form-control" type="text" name="zipCode" />
+              <p class="error"></p>
+            </div>
+
+            <div class="w-70">
+              <div class="form-label">City*</div>
+              <input id="city" class="form-control" type="text" name="city" />
+              <p class="error"></p>
+            </div>
+          </div>
         </div>
 
         <div id="btn-submit" class="btn personal-info__button">Button</div>

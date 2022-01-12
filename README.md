@@ -2,7 +2,6 @@
 
 ![Node version 16.13.1](https://img.shields.io/badge/node-v16.13.1-green)
 ![NPM version 8.1.2](https://img.shields.io/badge/NPM-v8.1.2-green)
-![React version 17.0.2](https://img.shields.io/badge/react-v17.0.2-green)
 
 The goal of this project is to give an introduction for Web Accessibility
 
