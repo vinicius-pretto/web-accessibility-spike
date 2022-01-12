@@ -1,33 +1,60 @@
+const formFields = {
+  firstName: document.querySelector("#firstName"),
+  lastName: document.querySelector("#lastName"),
+  email: document.querySelector("#email"),
+  password: document.querySelector("#password"),
+  street: document.querySelector("#street"),
+  zipCode: document.querySelector("#zipCode"),
+  city: document.querySelector("#city"),
+};
+
+Object.keys(formFields).forEach((key) => {
+  const field = formFields[key];
+
+  field.addEventListener("change", (e) => {
+    const value = e.target.value.trim();
+    if (!value) {
+      setErrorMessage(key, "Required");
+    } else {
+      setErrorMessage(key, "");
+    }
+  });
+});
+
 function getFormValues() {
   return {
-    firstName: document.querySelector("#firstName").value,
-    lastName: document.querySelector("#lastName").value,
-    email: document.querySelector("#email").value,
-    password: document.querySelector("#password").value,
-    street: document.querySelector("#street").value,
-    zipCode: document.querySelector("#zipCode").value,
-    city: document.querySelector("#city").value
-  }
+    firstName: formFields.firstName.value.trim(),
+    lastName: formFields.lastName.value.trim(),
+    email: formFields.email.value.trim(),
+    password: formFields.password.value.trim(),
+    street: formFields.street.value.trim(),
+    zipCode: formFields.zipCode.value.trim(),
+    city: formFields.city.value.trim(),
+  };
 }
 
 function clearFormErrors(values) {
-  Object.keys(values).forEach(key => {
-    document.querySelector(`#${key} ~ p`).textContent = '';
+  Object.keys(values).forEach((field) => {
+    setErrorMessage(field, "");
   });
 }
 
 function validate(values) {
   let isValid = true;
-  
+
   const errors = {};
   Object.keys(values).forEach((key) => {
     if (!values[key]) {
-      errors[key] = 'Required';
+      errors[key] = "Required";
       isValid = false;
     }
   });
 
   return { errors, isValid };
+}
+
+function setErrorMessage(field, error) {
+  document.querySelector(`#${field} ~ p`).textContent = error;
 }
 
 function renderFormValues(values) {
@@ -37,8 +64,9 @@ function renderFormValues(values) {
 }
 
 function renderFormErrors(errors) {
-  Object.keys(errors).forEach(key => {
-    document.querySelector(`#${key} ~ p`).textContent = errors[key];
+  Object.keys(errors).forEach((key) => {
+    const error = errors[key];
+    setErrorMessage(key, error);
   });
 }
 
@@ -50,6 +78,6 @@ document.querySelector("#btn-submit").addEventListener("click", () => {
     renderFormErrors(errors);
     return;
   }
-  renderFormValues(values)
+  renderFormValues(values);
   clearFormErrors(values);
 });
