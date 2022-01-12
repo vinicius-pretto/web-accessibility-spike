@@ -14,7 +14,7 @@ Object.keys(formFields).forEach((key) => {
   field.addEventListener("change", (e) => {
     const value = e.target.value.trim();
     if (!value) {
-      setErrorMessage(key, "Required");
+      setErrorMessage(key, "Please fill out this field");
     } else {
       setErrorMessage(key, "");
     }
@@ -45,7 +45,7 @@ function validate(values) {
   const errors = {};
   Object.keys(values).forEach((key) => {
     if (!values[key]) {
-      errors[key] = "Required";
+      errors[key] = "Please fill out this field";
       isValid = false;
     }
   });
