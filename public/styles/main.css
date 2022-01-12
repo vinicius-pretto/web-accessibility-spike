@@ -67,6 +67,11 @@ legend {
   border-radius: var(--border-radius-base);
 }
 
+.dark-mode {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
 /* ================= form ============== */
 .form-label {
   display: block;
@@ -92,9 +97,8 @@ legend {
   outline-style: solid;
 }
 
-.dark-mode {
-  background: var(--color-dark);
-  color: var(--color-white);
+.fieldset {
+  margin-top: 4rem;
 }
 /* ================= end form ============== */
 
