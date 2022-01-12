@@ -18,6 +18,7 @@ The goal of this project is to give an introduction for Web Accessibility
 - [Removing Headaches from Focus Management](https://developers.google.com/web/updates/2016/03/focus-start-point?hl=en)
 - [Accessibility - The State of the Web](https://www.youtube.com/watch?v=TomOQYxFnrU)
 - [A11y Project](https://www.a11yproject.com/)
+- [WAI ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1)
 
 ## Running application
 
