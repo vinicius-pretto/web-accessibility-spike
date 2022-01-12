@@ -38,6 +38,16 @@ ol {
   list-style: none;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
 :focus {
   outline-color: var(--color-dark);
   outline-style: dashed;
