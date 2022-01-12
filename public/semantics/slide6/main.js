@@ -75,6 +75,8 @@ document.querySelector("#btn-submit").addEventListener("click", () => {
   const { isValid, errors } = validate(values);
 
   if (!isValid) {
+    const firstInvalidInput = Object.keys(errors)[0];
+    formFields[firstInvalidInput].focus();
     renderFormErrors(errors);
     return;
   }
