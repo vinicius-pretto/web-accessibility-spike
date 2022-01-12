@@ -59,7 +59,7 @@ function setErrorMessage(field, error) {
 
 function renderFormValues(values) {
   const output = document.querySelector("#output");
-  output.classList.remove("hidden");
+  output.classList.remove("visually-hidden");
   output.innerHTML = JSON.stringify(values, null, 2);
 }
 

@@ -42,7 +42,7 @@
 }
 /* ============== end text ============== */
 
-.hidden {
+.visually-hidden {
   visibility: hidden;
 }
 
