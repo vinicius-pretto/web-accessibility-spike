@@ -12,6 +12,7 @@ html {
 
 body {
   color: var(--color-dark);
+  scroll-behavior: smooth;
 }
 
 body,

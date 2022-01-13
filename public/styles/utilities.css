@@ -40,6 +40,10 @@
 .text-red {
   color: var(--color-red);
 }
+
+.text-line-through {
+  text-decoration: line-through;
+}
 /* ============== end text ============== */
 
 .visually-hidden {
