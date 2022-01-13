@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" async></script>
+    <script src="/components/page-slider.js" async></script>
   </head>
   <body>
     <main class="slide intro-to-web-accessibility">
@@ -26,39 +27,6 @@
       </div>
     </main>
 
-    <div class="page-slider">
-      <a href="/semantics/slide1" title="Back to previous slide">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </a>
-      <a href="/semantics/slide3" title="Go to next slide">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </a>
-    </div>
+    <page-slider previous="/semantics/slide1" next="/semantics/slide3" />
   </body>
 </html>

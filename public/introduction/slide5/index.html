@@ -7,6 +7,7 @@
     <title>Focus</title>
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/components/page-slider.js" async></script>
   </head>
   <body>
     <main class="slide slide--dark">
@@ -21,39 +22,6 @@
       </section>
     </main>
 
-    <div class="page-slider">
-      <a href="/introduction/slide4/" title="Back to previous slide">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </a>
-      <a href="/focus/slide1" title="Go to next slide">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </a>
-    </div>
+    <page-slider previous="/introduction/slide4/" next="/focus/slide1" />
   </body>
 </html>
